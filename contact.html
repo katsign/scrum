@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact | The Scrum Docs 📜</title>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <!--MAIN Container-->
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div class="d-flex flex-row align-items-top justify-content-start">
+          <!--LEFT Column-->
+          <section class="mr-lg-4" id="left-col">
+            <h1>Scrum<br>Docs <span style="font-size: large">📜</span></h1>
+            <!--Navigation Menu-->
+            <nav>
+              <ul class="nav">
+                <li class="nav-item">
+                  <i class="material-icons">home</i>
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <i class="material-icons">business</i>
+                  <a class="nav-link" href="agile.html">About Agile</a>
+                </li>
+                <li class="nav-item">
+                  <i class="material-icons">engineering</i>
+                  <a class="nav-link" href="scrum.html">About Scrum</a>
+                </li>
+                <li class="nav-item">
+                  <i class="material-icons">public</i>
+                  <a class="nav-link" href="implementations.html">Implementations</a>
+                </li>
+                <li class="nav-item">
+                  <i class="material-icons">message</i>
+                  <a class="nav-link active" href="contact.html">Get In Touch</a>
+                </li>
+              </ul>
+            </nav>
+          </section> <!--LEFT COL Closing Tag-->
+
+          <!--MIDDLE Column-->
+          <section class="tab gradient" id="middle-col">
+            <h2>Get In Touch</h2>
+            <div class="separator"></div>
+            <h5 class="mt-3">
+              Fill out this contact form to receive more information about our
+              services.
+            </h5>
+            <hr>
+            <span class="small">Required fields are noted with an asterick *.</span>
+            <form
+              method="POST"
+              action="https://webdevbasics.net/scripts/demo.php"
+              class="mt-3"
+              id="contact">
+              <label for="myFName">*First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="myFName"
+                id="myFName"
+                required
+                placeholder="Dev">
+              <label for="myLName">*Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="myLName"
+                id="myLName"
+                required
+                placeholder="Doe">
+              <label for="myEmail">*E-mail:</label>
+              <input
+                type="email"
+                class="form-control"
+                name="myEmail"
+                id="myEmail"
+                required
+                placeholder="dev@domain.com">
+              <label for="myTel">Telephone:</label>
+              <input
+                type="tel"
+                class="form-control"
+                name="myTel"
+                id="myTel"
+                maxlength="12"
+                placeholder="800-222-4444">
+              <label for="myComments">*Message:</label>
+              <textarea
+                name="myComments"
+                class="form-control"
+                id="myComments"
+                rows="2"
+                cols="300"
+                required
+                placeholder="I'm looking for more info about..."></textarea>
+              <button
+                type="submit"
+                class="btn btn-outline-primary"
+                id="contact-submit">
+                Send
+              </button>
+            </form>
+          </section> <!--MIDDLE COL Closing Tag-->
+        </div> <!--Flex Row Closing Tag-->
+      </div> <!--Main Container Closing Tag-->
+    </main>
+
+    <!--BACKGROUND Art-->
+    <div id="orb" class="circle"></div>
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto">
+      <div
+        class="d-flex flex-row align-items-center justify-content-around fill"
+        id="footer-row">
+        <span class="text-muted" id="thanks">🌟 Special thanks to
+          <a
+            href="https://www.zeolearn.com/magazine/why-scrum"
+            target="_blank" rel="noreferrer"
+            style="color: thistle; font-weight: 400">Zeolearn</a>
+          for the adapted content of this website.</span>
+        <vertical-hr></vertical-hr>
+        <!--Footer Navigation Menu-->
+        <ul id="footer-nav">
+          <li class="nav-item">
+            <a class="text-muted" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-muted" href="agile.html">About Agile</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-muted" href="scrum.html">About Scrum</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-muted" href="implementations.html"
+              >Implementations</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-muted" href="contact.html">Get In Touch</a>
+          </li>
+        </ul>
+      </div> <!--Footer Row Closing Tag-->
+    </footer>
+  </body>
+</html>
